@@ -1,10 +1,5 @@
 .page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
+ 
 
   display: grid;
   grid-template-rows: 20px 1fr 20px;
@@ -14,6 +9,19 @@
   padding: 80px;
   gap: 64px;
   font-family: var(--font-geist-sans);
+  background-image:url('./images/starry-night-sky-reflection-background-hd-wallpaper-sr10012425-1705222416280-cover.webp');
+ background-repeat:no-repeat;
+ background-size: cover;
+
+
+}
+.page{
+  border-style: solid;
+  border-width: 1rem;
+}
+
+.body{
+ padding: auto;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,6 +40,7 @@
   flex-direction: column;
   gap: 32px;
   grid-row-start: 2;
+ 
 }
 
 .main ol {
@@ -154,15 +163,76 @@ a.secondary {
     min-width: auto;
   }
 
-  .footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
+  
 }
 
 @media (prefers-color-scheme: dark) {
   .logo {
     filter: invert();
   }
+}
+
+.header{
+  
+  width:100%;
+  background-color: blue ;
+  
+  text-align: center;
+  font-size: larger;
+  animation: header 1s ease-in-out infinite alternate;
+  
+ 
+}
+
+@keyframes header{
+  from {
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #fff, 0 0 30px lightblue, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #36e600, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.h1{
+ 
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about{
+  color: white;
+  margin: 1rem;
+  float: right;
+ font-size: 20px;
+ 
+}
+
+.search{
+ font-size: 30px;
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  text-shadow: darkblue 1px 0 10px;
+ display:contents;
+ color: lightblue;
+
+
+
+}
+.button :hover{
+
+  border: none;
+}
+
+.input{
+  
+  height: 2rem;
+  border:0
+}
+
+.section{
+  text-align: center;
+  font-size: larger;
+ 
+  padding: 2%;
+ width: 50%;
+
+  background-color: lightblue;
 }
