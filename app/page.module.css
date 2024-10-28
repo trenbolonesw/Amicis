@@ -175,8 +175,8 @@ a.secondary {
 .header{
   
   width:100%;
-  background-color: blue ;
-  
+  background-color: darkblue ;
+  border-radius: 10px;
   text-align: center;
   font-size: larger;
   animation: header 1s ease-in-out infinite alternate;
@@ -206,33 +206,43 @@ a.secondary {
 }
 
 .search{
- font-size: 30px;
-  text-align: center;
-  font-family:'Times New Roman', Times, serif;
+ 
+ 
   text-shadow: darkblue 1px 0 10px;
  display:contents;
  color: lightblue;
-
-
+ border-style: solid;
+ border-radius: 10% 10%;
 
 }
+.label{
+ font-family:'Times New Roman', Times, serif;
+  font-size: 50px;
+  text-align: center;
+}
+
 .button :hover{
 
   border: none;
 }
 
 .input{
+ border-radius: 4rem;
+ font-size: large;
   
+}
+
+.input{
+  margin-top: 2rem;
   height: 2rem;
   border:0
 }
 
 .section{
-  text-align: center;
-  font-size: larger;
- 
-  padding: 2%;
- width: 50%;
-
-  background-color: lightblue;
+  
+ padding: 1rem;
+ border-style: solid;
+  background-color: blue;
+  border-radius: 4% 4%;
+  font-size: medium;
 }

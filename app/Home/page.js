@@ -3,14 +3,17 @@ export default function AmicisAbout(){
     return(
        
         <main className={classes.page}>
-            <div>
-            <p>
+      
+                <h1>
+                <p>
             welcome to Amicis!
             </p>
             <p>
             I hope you enjoy this little social media web demo.
             </p>
-            </div>
+                </h1>
+          
+          
             
            
         </main>

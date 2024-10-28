@@ -1,5 +1,6 @@
 .page{
+   
     height: 70rem;
    background-size: cover; 
-   
-}
+   background-image: url('../images/webp-background-80.webp');
+}    
